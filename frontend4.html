@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartHome Hub</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: linear-gradient(120deg, #0d6efd, #6610f2);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .hero img {
+      max-width: 100%;
+      border-radius: 20px;
+    }
+    .feature-icon {
+      font-size: 2rem;
+      color: #0d6efd;
+    }
+    .toggle-btn {
+      cursor: pointer;
+    }
+    .pricing-card {
+      border: 1px solid #dee2e6;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+    .pricing-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-secondary sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">SmartHome Hub</a>
+    <div class="d-flex align-items-center">
+      <i class="bi bi-sun-fill fs-5 toggle-btn me-3" id="themeToggle" title="Toggle Theme"></i>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1 class="display-4 fw-bold" data-aos="fade-down">Upgrade Your Living</h1>
+    <p class="lead" data-aos="fade-up">SmartHome Hub connects and automates your home like never before.</p>
+    <a href="#features" class="btn btn-light btn-lg mt-3" data-aos="zoom-in">Get Started</a>
+    <div class="mt-5" data-aos="fade-up" data-aos-delay="300">
+      <img src="sebastian-scholz-nuki-IJkSskfEqrM-unsplash.jpg" alt="Product" />
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2>Features</h2>
+      <p class="text-muted">Why SmartHome Hub is the perfect fit for your home</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-right">
+        <div class="text-center">
+          <i class="bi bi-house-fill feature-icon"></i>
+          <h5 class="mt-3">Central Control</h5>
+          <p>Manage all smart devices from one place.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="text-center">
+          <i class="bi bi-shield-lock-fill feature-icon"></i>
+          <h5 class="mt-3">Secure & Reliable</h5>
+          <p>Top-grade security and stable connectivity.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-left">
+        <div class="text-center">
+          <i class="bi bi-lightning-charge-fill feature-icon"></i>
+          <h5 class="mt-3">Energy Efficient</h5>
+          <p>Optimize energy use and save on bills.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="py-5 bg-body-tertiary">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2>Pricing</h2>
+      <p class="text-muted">Choose a plan that fits your needs</p>
+    </div>
+    <div class="row text-center g-4">
+      <div class="col-md-4" data-aos="flip-left">
+        <div class="pricing-card p-4">
+          <h4>Basic</h4>
+          <p class="fs-4">$49</p>
+          <ul class="list-unstyled">
+            <li>1 Device</li>
+            <li>Email Support</li>
+            <li>Free Updates</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="flip-up">
+        <div class="pricing-card p-4 bg-primary text-white">
+          <h4>Pro</h4>
+          <p class="fs-4">$99</p>
+          <ul class="list-unstyled">
+            <li>5 Devices</li>
+            <li>Priority Support</li>
+            <li>Advanced Controls</li>
+          </ul>
+          <a href="#" class="btn btn-light">Buy Now</a>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="flip-right">
+        <div class="pricing-card p-4">
+          <h4>Enterprise</h4>
+          <p class="fs-4">$199</p>
+          <ul class="list-unstyled">
+            <li>Unlimited Devices</li>
+            <li>Dedicated Manager</li>
+            <li>Custom Integrations</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2>User Reviews</h2>
+      <p class="text-muted">What our customers say</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="p-4 border rounded shadow-sm">
+          <p>“SmartHome Hub made our lives so much easier!”</p>
+          <h6 class="fw-bold">— Ayesha Khan</h6>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="p-4 border rounded shadow-sm">
+          <p>“Best investment in home automation!”</p>
+          <h6 class="fw-bold">— Daniel Brooks</h6>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+        <div class="p-4 border rounded shadow-sm">
+          <p>“Excellent performance and easy setup.”</p>
+          <h6 class="fw-bold">— Fatima Ali</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sign-Up Section -->
+<section class="py-5 bg-dark text-white">
+  <div class="container text-center" data-aos="fade-up">
+    <h2>Stay Updated</h2>
+    <p>Join our newsletter for updates and offers.</p>
+    <form class="row justify-content-center mt-4">
+      <div class="col-md-4">
+        <input type="text" class="form-control mb-2" placeholder="Your Name" required>
+        <input type="email" class="form-control mb-2" placeholder="Your Email" required>
+        <button class="btn btn-primary w-100">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 text-center bg-body-secondary">
+  <p class="mb-0">© 2025 SmartHome Hub. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS Animation JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  // Toggle Dark/Light Mode
+  const toggle = document.getElementById('themeToggle');
+  toggle.addEventListener('click', () => {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-bs-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-bs-theme', next);
+    toggle.classList.toggle('bi-sun-fill');
+    toggle.classList.toggle('bi-moon-fill');
+  });
+</script>
+</body>
+</html>
